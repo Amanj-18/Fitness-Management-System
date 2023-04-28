@@ -111,7 +111,7 @@ const Navbar = ({ moveIndex }) => {
              
             </Link> */}
 
-            {/* <Link to="/room">
+            <Link to="/room">
               <div
                 className="nav nav4"
                 onMouseEnter={() => {
@@ -120,7 +120,7 @@ const Navbar = ({ moveIndex }) => {
               >
                 Video Room
               </div>
-            </Link> */}
+            </Link>
             <div
               className="menu-back"
               style={{ left: moveIndex * 120 + "px" }}

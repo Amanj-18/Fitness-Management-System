@@ -7,11 +7,8 @@ import Landing from "./components/Landing";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import React, { useEffect, useState } from "react";
 import Excercise from "./components/Exercise/Exercise";
-import { BrowserRouter, Route, Routes , useLocation  } from "react-router-dom";
+import { BrowserRouter, Route, Routes ,   } from "react-router-dom";
 import Exlist from "./components/Exlist";
-import { RedirectFunction } from "react-router-dom";
-
-import { redirect } from "react-router-dom";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -38,8 +35,6 @@ function App() {
         <Navbar />
         <div style={{ marginTop: "100px" }}>
           <Routes>
-            {/* <RedirectFunction from="/:http://localhost:3000/*(/+)" to={"http://localhost:5000/".slice(0, -1)} /> */}
-
             <Route path="/" element={<Landing moveIndex={0} />} />
             <Route path="/room" element={<Room />} />
             <Route path="/diet" element={<Diet moveIndex={1} />} />

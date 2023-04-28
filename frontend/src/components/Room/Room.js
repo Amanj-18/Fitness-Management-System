@@ -10,7 +10,7 @@ const Room = () => {
         title="Whereby"
       ></iframe> */}
       <iframe
-        src="https://coders-4-life.whereby.com/demo-b9fb3441-cf4a-45b0-a3f2-b2870a269d0d"
+        src="https://whereby.com/aman-jaiswal-fitness-maintainer"
         allow="camera; microphone; fullscreen; speaker; display-capture"
       ></iframe>
     </div>
