@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+.mid-img {
+    height: 500px;
+    z-index: 2;
+    position: relative;
+}
+
+.diet-text {
+    position: absolute;
+    font-size: 300px;
+    font-weight: 900;
+    z-index: 1;
+    top: -100px;
+    color: #c3a49b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-box {
+    font-size: 23px;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 3;
+    width: 150px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    height: 80px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.text-box:hover {
+    background: #111517;
+    color: white;
+}
+
+.ft {
+    left: calc(50% - 75px);
+    top: -20px;
+}
+
+.st {
+    top: 30%;
+    left: -20%;
+}
+
+.tt {
+    top: 30%;
+    right: -20%;
+}
+
+.fot {
+    top: 70%;
+    left: -14%;
+}
+
+.fit {
+    top: 70%;
+    right: -14%;
+}

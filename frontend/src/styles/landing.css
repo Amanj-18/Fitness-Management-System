@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.land-cont {
+    margin-top: 90px;
+    min-height: 100vh;
+}
+
+.text-cont {
+    font-size: 180px;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 10vw;
+    display: flex;
+    margin-top: 140px;
+}
+
+.divl {
+    transition: .2s ease-out;
+}
+
+.s {
+    font-size: 30px;
+    height: 60px;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.sin {
+    transform: translateY(100%);
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 11vw;
+}
+
+.main-img-cont {
+    position: absolute;
+    right: -30px;
+    top: -50px;
+}
+
+.main-img-cont img {
+    height: 700px;
+}

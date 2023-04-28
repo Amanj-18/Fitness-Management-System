@@ -1,0 +1,59 @@
+.modalWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  text-align: center;
+  padding: 0 !important;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.modal {
+  z-index: 8;
+  min-width: 300px;
+  min-height: 400px;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  bottom: 41.2%;
+  left: 32%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeInDown 0.8s ease;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    min-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    min-width: 80%;
+  }
+}
+
+.btnClose {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

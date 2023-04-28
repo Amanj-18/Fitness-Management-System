@@ -1,0 +1,80 @@
+.exlist-cont {
+    height: 300vh;
+}
+
+.exlist-inner-cont {
+    display: flex;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #111517;
+}
+
+.ex-left {
+    width: 50%;
+}
+
+.left-abs {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 300vh;
+    width: 50vw;
+    z-index: 3;
+}
+
+.left-full {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.left-title {
+    font-size: 120px;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 5vw;
+    color: white;
+}
+
+.left-p {
+    font-size: 20px;
+    color: var(--light-black);
+    color: white;
+    opacity: .7;
+    margin-bottom: 40px;
+    margin-left: 5vw;
+}
+
+.ex-right {
+    width: 50%;
+}
+
+.circle-cont-ex {
+    width: 530px;
+    position: relative;
+    height: 530px;
+    background-color: #e5bfbf;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ex-list {
+    position: absolute;
+    top: -85px;
+    left: -98px;
+    height: 300vh;
+    width: 50vw;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+}
+
+.list img {
+    width: 400px;
+}

@@ -1,0 +1,109 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #fbf1f1;
+}
+
+:root {
+    --bg-black: #111517;
+    --light-black: #76838f;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.flex-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: maragsa;
+    src: url(../fonts/Maragsâ.otf);
+    font-display: swap;
+}
+
+.pos-absf {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+.up-load-half {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: var(--bg-black);
+}
+
+.load-cont {
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh !important;
+}
+
+.down-load-half {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.video-load-cont {
+    width: 58vw;
+    height: 69vh;
+}
+
+.video-cont-load {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}
+
+.video-inner-load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58vw;
+    height: 69vh;
+}
+
+.video-load-cont video {
+    width: 100%;
+    height: 100%;
+}
+
+.left-word {
+    font-family: maragsa;
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    left: -20%;
+    transform: translateX(-150%);
+    top: -40px;
+    z-index: 1;
+}
+
+.right-word {
+    font-family: maragsa;
+    font-size: 70px;
+    right: -10%;
+    bottom: -40px;
+    z-index: 1;
+    transform: translateX(150%);
+}

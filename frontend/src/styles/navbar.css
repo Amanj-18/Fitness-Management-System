@@ -1,0 +1,224 @@
+.navbar {
+    height: 90px;
+    position: relative;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: #fbf1f1;
+    top: 0px;
+    transition: all .5s ease;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+
+.navbar-hide {
+    display: none;
+}
+
+.scrolled-navbar {
+    height: 60px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navbar-right {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.navrel {
+    display: flex;
+    align-items: center;
+}
+
+.menu-back {
+    position: absolute;
+    width: 120px;
+    left: 0px;
+    z-index: -1;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav {
+    font-size: 20px;
+    width: 120px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+.navbar-left img {
+    width: 150px;
+    margin-left: 7vw;
+}
+
+@media screen and (max-width:900px) {
+
+    .navbar {
+        height: 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    #nav-icon3 {
+        width: 30px;
+        height: 25px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #nav-icon3 span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: black;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    #nav-icon3 span:nth-child(1) {
+        top: 0px;
+    }
+
+    #nav-icon3 span:nth-child(2),
+    #nav-icon3 span:nth-child(3) {
+        top: 10px;
+    }
+
+    #nav-icon3 span:nth-child(4) {
+        top: 20px;
+    }
+
+    #nav-icon3.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    #nav-icon3.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #nav-icon3.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    #nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    :root {
+        --bg-black: #111517;
+    }
+
+    .navbar .container {
+        transform: scale(.7) translateX(10px);
+    }
+
+    .navbar img {
+        width: 120px;
+        margin-left: 4vw;
+    }
+
+    .menu-back {
+        display: none;
+    }
+
+    .navbar-right {
+        right: 2vw;
+    }
+
+    .navbar-right .plain-btn {
+        height: 40px !important;
+    }
+
+    .navrel a {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .active-page::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.nav-icons-cont {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.nav-icons-cont svg {
+    margin: 0px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--bg-black);
+}
+
+.ios svg {
+    font-size: 25px;
+}

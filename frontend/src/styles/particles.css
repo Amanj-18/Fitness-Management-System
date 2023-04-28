@@ -1,0 +1,25 @@
+.canvas-cont {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.hefty-title-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+    pointer-events: none;
+}

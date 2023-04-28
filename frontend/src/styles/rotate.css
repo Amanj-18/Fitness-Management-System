@@ -1,0 +1,61 @@
+.outer-rot {
+    min-height: 100vh;
+    margin-top: 20px;
+}
+
+.rot-one {
+    width: 550px;
+    height: 350px;
+    position: relative;
+    margin-left: 7vw;
+    transform: translateY(600px) rotate(-45deg);
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.rot-one::after {
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    transform-origin: left bottom;
+    content: 'Model xyz';
+    transform: rotate(-90deg);
+    font-size: 23px;
+}
+
+.rta::after {
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+    transform-origin: right bottom;
+    content: 'Model xyz';
+    transform: rotate(90deg);
+    font-size: 23px;
+}
+
+.team-img-cont {
+    overflow: hidden;
+    transition: .1s;
+    transform: scale(1.2);
+}
+
+.rot-one img {
+    width: 550px;
+    height: 350px;
+}
+
+.rot-two {
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    right: 4vw;
+    top: 200px;
+    transform: translateY(600px) rotate(45deg);
+}
+
+.rot-two img {
+    width: 550px;
+    height: 350px;
+}
